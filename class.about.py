@@ -73,7 +73,7 @@ class Car():
         return f"{self.name} was produced {self.year} year!"
 
     def __call__(self):
-        print("hi")
+        return True
 
 
 my_car = Car("Ferrari", 2026)
@@ -83,8 +83,7 @@ my_car.stopEngine()
 print("-------")
 your_car = Car("supra", 2010)
 
-# print(your_car)
-# response = your_car()
-# print("your_car", response)
-
-your_car()
+your_car()  # bu call functionga return emas print yozilgan ishga tushadi
+print(your_car)
+response = your_car()
+print("your_car", response)
